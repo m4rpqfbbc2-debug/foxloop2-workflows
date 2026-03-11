@@ -125,7 +125,7 @@ export const flagService = (log: FastifyBaseLogger) => ({
             },
             {
                 id: ApFlagId.SHOW_POWERED_BY_IN_FORM,
-                value: true,
+                value: false,
                 created,
                 updated,
             },
@@ -185,7 +185,7 @@ export const flagService = (log: FastifyBaseLogger) => ({
             },
             {
                 id: ApFlagId.SHOW_COMMUNITY,
-                value: system.getEdition() !== ApEdition.ENTERPRISE,
+                value: false,
                 created,
                 updated,
             },

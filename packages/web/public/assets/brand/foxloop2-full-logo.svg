@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&amp;display=swap');
+      .logo-text { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 28px; }
+    </style>
+  </defs>
+  <text x="10" y="35" class="logo-text" fill="#e94560">fox</text>
+  <text x="58" y="35" class="logo-text" fill="#ececf1">loop2</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <defs>
+    <linearGradient id="foxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#ff5a75"/>
+    </linearGradient>
+  </defs>
+  <!-- Stylized F shape resembling a fox ear -->
+  <path d="M8 6 L32 6 L32 12 L16 12 L16 18 L28 18 L28 24 L16 24 L16 34 L8 34 Z" fill="url(#foxGrad)"/>
+  <!-- Small accent dot -->
+  <circle cx="32" cy="30" r="4" fill="#e94560"/>
+</svg>

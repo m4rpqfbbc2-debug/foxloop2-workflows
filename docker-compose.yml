@@ -1,7 +1,10 @@
 services:
-  activepieces:
-    image: ghcr.io/activepieces/activepieces:0.79.0
-    container_name: activepieces
+  foxloop2:
+    image: ghcr.io/m4rpqfbbc2-debug/foxloop2-workflows:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: foxloop2-workflows
     restart: unless-stopped
     ## Enable the following line if you already use AP_EXECUTION_MODE with SANDBOX_PROCESS or old activepieces, checking the breaking change documentation for more info.
     ## privileged: true
@@ -14,10 +17,10 @@ services:
     volumes:
       - ./cache:/usr/src/app/cache
     networks:
-      - activepieces
+      - foxloop2
   postgres:
     image: 'postgres:14.4'
-    container_name: postgres
+    container_name: foxloop2-postgres
     restart: unless-stopped
     env_file: .env
     environment:
@@ -27,18 +30,17 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
-      - activepieces
+      - foxloop2
   redis:
     image: 'redis:7.0.7'
-    container_name: redis
+    container_name: foxloop2-redis
     restart: unless-stopped
     volumes:
       - 'redis_data:/data'
     networks:
-      - activepieces
+      - foxloop2
 volumes:
   postgres_data:
   redis_data:
 networks:
-  activepieces:
-  
+  foxloop2:

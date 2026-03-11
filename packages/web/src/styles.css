@@ -433,53 +433,55 @@
   }
 
 .dark {
-  --background: theme('colors.neutral.950');
-  --foreground: theme('colors.neutral.50');
-  --popover: theme('colors.neutral.800');
-  --muted: theme('colors.neutral.800');
-  --muted-foreground: theme('colors.neutral.400');
+  /* Foxloop2 Dark Theme - Background #0a0a0f, Primary #e94560 */
+  --background: #0a0a0f;
+  --foreground: #ececf1;
+  --popover: #141419;
+  --muted: #141419;
+  --muted-foreground: #8e8ea0;
 
-  --secondary: theme('colors.neutral.800');
-  --secondary-foreground: theme('colors.neutral.50');
+  --secondary: #1c1c24;
+  --secondary-foreground: #ececf1;
 
-  --accent: theme('colors.neutral.700');
-  --accent-foreground: theme('colors.neutral.50');
+  --accent: #1c1c24;
+  --accent-foreground: #ececf1;
 
-  --primary-100: 210 80% 40%;
-  --primary: 210 90% 50%;
-  --primary-300: 210 100% 85%;
-  --primary-foreground: 210 90% 98%;
+  /* Foxloop2 coral primary - #e94560 */
+  --primary-100: 351 80% 40%;
+  --primary: 351 82% 59%;
+  --primary-300: 351 100% 85%;
+  --primary-foreground: 0 0% 100%;
 
   --success: var(--success-400);
   --destructive: var(--destructive-400);
 
   --warning: var(--warning-400);
 
-  --border: hsla(0, 0%, 100%, 0.1);
-  --input:hsla(0, 0%, 100%, 0.1);
+  --border: #2a2a38;
+  --input: #2a2a38;
 
-  --ring: theme('colors.neutral.500');
+  --ring: #8e8ea0;
   --radius: 0.625rem;
 
   --add-button-shadow: 0 0 0 6px hsl(var(--primary-100) / 0.4);
 
-  --chart-1: 210 85% 55%;
+  --chart-1: 351 82% 59%;
   --chart-2: 160 80% 50%;
   --chart-3: 35 90% 55%;
   --chart-4: 280 75% 65%;
   --chart-5: 340 80% 60%;
 
-  --sidebar-background:theme('colors.neutral.800');
-  --sidebar-foreground: theme('colors.neutral.50');
-  --sidebar-primary: 210 85% 65%;
-  --sidebar-primary-foreground: 210 90% 98%;
-  --sidebar-accent: theme('colors.neutral.700');
-  --sidebar-accent-foreground: theme('colors.neutral.50');
-  --sidebar-border: hsla(0, 0%, 100%, 0.1);
-  --sidebar-ring: theme('colors.neutral.600');
-  --sidebar-progress: 210 15% 40%;
-  --builder-background: hsla(0, 0%, 9%, 1);
-  --builder-background-pattern: hsla(0, 0%, 45%, 1);
+  --sidebar-background: #141419;
+  --sidebar-foreground: #ececf1;
+  --sidebar-primary: 351 82% 65%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: #1c1c24;
+  --sidebar-accent-foreground: #ececf1;
+  --sidebar-border: #2a2a38;
+  --sidebar-ring: #8e8ea0;
+  --sidebar-progress: 351 15% 40%;
+  --builder-background: #0a0a0f;
+  --builder-background-pattern: hsla(0, 0%, 30%, 1);
 }
 
 }

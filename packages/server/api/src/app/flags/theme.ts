@@ -64,9 +64,9 @@ export function generateTheme({
 }
 
 export const defaultTheme = generateTheme({
-    primaryColor: '#6e41e2',
-    websiteName: 'Activepieces',
-    fullLogoUrl: 'https://cdn.activepieces.com/brand/full-logo.png',
-    favIconUrl: 'https://cdn.activepieces.com/brand/favicon.ico',
-    logoIconUrl: 'https://cdn.activepieces.com/brand/logo.svg',
+    primaryColor: '#e94560',
+    websiteName: 'Foxloop2',
+    fullLogoUrl: '/assets/brand/foxloop2-full-logo.svg',
+    favIconUrl: '/assets/brand/foxloop2-favicon.svg',
+    logoIconUrl: '/assets/brand/foxloop2-icon.svg',
 })

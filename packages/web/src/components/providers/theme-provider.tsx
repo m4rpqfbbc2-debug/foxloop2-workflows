@@ -37,7 +37,7 @@ const setFavicon = (url: string) => {
 
 export function ThemeProvider({
   children,
-  defaultTheme = 'system',
+  defaultTheme = 'dark',
   storageKey = 'ap-ui-theme',
   ...props
 }: ThemeProviderProps) {
@@ -52,7 +52,7 @@ export function ThemeProvider({
     }
     const root = window.document.documentElement;
 
-    const resolvedTheme = theme === 'system' ? 'light' : theme;
+    const resolvedTheme = theme === 'system' ? 'dark' : theme;
     root.classList.remove('light', 'dark');
     document.title = branding.websiteName;
     document.documentElement.style.setProperty(
